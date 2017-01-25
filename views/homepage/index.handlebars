@@ -1,0 +1,161 @@
+<script>
+    //Marker database table json
+    var addMarkers = {{{result}}}
+</script>
+<div id="content" class="col s12">
+    {{#if cur_user}}
+        <div id="map" class="col s12"></div>
+        <!-- Modal for adding new marker -->
+        <div data-remodal-id="modal">
+            <button data-remodal-action="close" class="remodal-close"></button>
+            <h1>Add new activity</h1>
+            <form>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="inputName" type="text" class="validate" name="inputName">
+                        <label for="inputName">Name</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3 browser-default">
+                        <select id="inputSport" type="text" name="inputSport">
+                          <option value="Tennis" selected>Tennis</option>
+                          <option value="Cricket">Cricket</option>
+                          <option value="Basketball">Basketball</option>
+                          <option value="Hockey">Hockey</option>
+                          <option value="Volleyball">Volleyball</option>
+                          <option value="Ping Pong">Ping Pong</option>
+                          <option value="Dodgeball">Dodgeball</option>
+                          <option value="Softball">Softball</option>
+                          <option value="Soccer">Soccer</option>
+                          <option value="Kickball">Kickball</option>
+                          <option value="Baseball">Baseball</option>
+                          <option value="Swimming">Swimming</option>
+                        </select>
+                        <label>Select Sport</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s6 offset-s3">
+                        <input id="inputParticipants" type="number" name="inputParticipants">
+                        <label for="inputParticipants">Participants</label>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <button data-remodal-action="cancel" class="remodal-cancel">Cancel</button>
+            <button data-remodal-action="confirm" class="remodal-confirm">OK</button>
+        </div>
+</div>
+{{else}}
+    <!--homepage html before login-->
+    <div id="index-banner" class="parallax-container">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <br/><br/>
+
+                <div class="row center" style="margin: auto; width:500px; margin-top: 50px; background-color: rgba(255, 0, 0, 0.3);">
+                    <h5 class="header col s12" style="font-family:'Anonymous Pro'; font-size: 42px; color:white !important; border: 10px solid #fff; display: inline-block; padding: 10px; margin-top:-10px; margin-bottom:-10px;">Start playing now</h5>
+                </div>
+                <!--
+                <div class="row center">
+                    <a href="" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get
+                        Started By Signing Up</a>
+                </div>
+                -->
+                <br><br>
+
+            </div>
+        </div>
+        <div class="parallax"><img src="http://st.gdefon.com/wallpapers_original/s/214259_sport_ispaniya_komandy_kluby_igroki_futbolisty_sta_1920x1080_(www.GdeFon.ru).jpg" alt="Unsplashed background img 1"></div>
+    </div>
+
+
+    <div class="container">
+        <div class="section">
+
+            <!--   Icon Section   -->
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+                        <h5 class="center">Lorem Ipsum is simply</h5>
+
+                        <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+                        <h5 class="center">Lorem ipsum dolor</h5>
+
+                        <p class="light">Lorem ipsum dolor sit amet, vix graece libris theophrastus ex. Brute semper an vim, aperiam aliquando ea sea. Adhuc apeirian adipiscing id vel. At labores elaboraret intellegebat qui. Mea hinc choro utroque eu. Vim enim putent
+                            ea, verterem oportere patrioque ius ea.</p>
+                    </div>
+                </div>
+
+                <div class="col s12 m4">
+                    <div class="icon-block">
+                        <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+                        <h5 class="center">Easy to work with</h5>
+
+                        <p class="light">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="https://secure.static.tumblr.com/b053d3e85382f6c428370cc6aaa6729a/q48is5n/ybJn1wncb/tumblr_static_cricket_sports_1.jpg" alt="Unsplashed background img 2"></div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12 center">
+                    <h3><i class="mdi-content-send brown-text"></i></h3>
+                    <h4>Contact Us</h4>
+                    <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien
+                        id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed
+                        ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="parallax-container valign-wrapper">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row center">
+                    <h5 class="header col s12 light"></h5>
+                </div>
+            </div>
+        </div>
+        <div class="parallax"><img src="http://wallpapermad.com/wp-content/uploads/2016/08/wallpaper-sports-HD2-1.jpg" alt="Unsplashed background img 3">
+        </div>
+    </div>
+
+    {{/if}}
+
+    <!-- Google Map implementation -->
+    <script src="/js/googlemaps.js">
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBW0cN_4dkCiDcup9Cc6YXIPyANXs9zPic&callback=initMap"></script>
